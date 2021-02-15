@@ -1,5 +1,11 @@
 public class Sorts{
 
+    
+    /** 
+     * @param A
+     * @param izq
+     * @param der
+     */
     // Este codigo es para el quicksort
     public void quicksort(Comparable[] A, int izq, int der) {
 
@@ -31,6 +37,12 @@ public class Sorts{
 
 
 
+
+/** 
+ * @param array
+ * @param size
+ * @param place
+ */
 // Radix Sort
 // Es un ordenamiento mas elaborado
 // Comenzamos por definir cuantas veces repetiremos el ciclo
@@ -66,6 +78,12 @@ void countingSort(Dato[] array, int size, int place) {
       array[i] = output[i];
   }
 
+  
+  /** 
+   * @param array
+   * @param n
+   * @return int
+   */
   // Function to get the largest element from an array
   int getMax(Dato[] array, int n) {
     Dato max = array[0];
@@ -75,6 +93,11 @@ void countingSort(Dato[] array, int size, int place) {
     return max.getValor();
   }
 
+  
+  /** 
+   * @param array
+   * @param size
+   */
   // Main function to implement radix sort
   void radixSort(Dato[] array, int size) {
     // Get maximum element
@@ -85,6 +108,10 @@ void countingSort(Dato[] array, int size, int place) {
       countingSort(array, size, place);
   }
 
+  
+  /** 
+   * @param array
+   */
   // Revisar
 //https://www.programiz.com/dsa/radix-sort
 
@@ -106,6 +133,11 @@ void countingSort(Dato[] array, int size, int place) {
   }
 
 
+  
+  /** 
+   * @param array
+   * @return Dato[]
+   */
   //Merge Sort
   public static  Dato[] MergeSort(Dato[] array) {
     if(array.length<=1){
@@ -124,6 +156,12 @@ void countingSort(Dato[] array, int size, int place) {
     
 }
 
+
+/** 
+ * @param first
+ * @param second
+ * @param result
+ */
 private static void Merge(Dato[] first, Dato[] second, Dato[] result) {
     int iFirst = 0;
     int iSecond = 0;
@@ -148,6 +186,10 @@ private static void Merge(Dato[] first, Dato[] second, Dato[] result) {
 }
 
 	boolean fixeado = false;
+  
+  /** 
+   * @param array
+   */
   // Bubble sort
   public void BubbleSort(Dato[] array){
     while(fixeado==false){
